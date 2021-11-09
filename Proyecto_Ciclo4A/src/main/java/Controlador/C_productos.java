@@ -41,8 +41,8 @@ public class C_productos extends HttpServlet {
 			if(archivo.getSize()>0) {
 
 				
-			String Url="C:\\documentos\\";
-			
+			//String Url="C://Users//CASA//git//PROYECTO_CICLO4A//Proyecto_Ciclo4A//src//main//webapp//documentos//";
+			String Url="C://documentos//";
 			try {
 			InputStream file= archivo.getInputStream();
 			File copia = new File(Url+"prueba.csv");
@@ -60,7 +60,7 @@ public class C_productos extends HttpServlet {
 				response.sendRedirect("Productos.jsp?men=Se Inserto Los Libros Correctamente");
 			}else
 			{
-				response.sendRedirect("Productos.jsp?men=No se Inserto los Libros");
+				response.sendRedirect("Productos.jsp?men=No se Insertgo los Libros");
 			}
 			}catch(Exception e) {
 				JOptionPane.showMessageDialog(null, "Error de Archivo....."+e);
