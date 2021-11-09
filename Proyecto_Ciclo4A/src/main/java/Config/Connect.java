@@ -13,8 +13,8 @@ public class Connect {
 	   
 	      // Creating Credentials 
 	      MongoCredential credential; 
-	      credential = MongoCredential.createCredential("sampleUser", "TiendaDB", 
-	         "password".toCharArray()); 
+	      credential = MongoCredential.createCredential("", "TiendaDB", 
+	         "".toCharArray()); 
 	      System.out.println("Connected to the database successfully");  
 	      
 	      // Accessing the database 

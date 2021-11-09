@@ -21,7 +21,7 @@
 <body>
 
 
-<form action="" method="post" enctype="multipart/form-data">
+<form action="C_productos" method="post" enctype="multipart/form-data">
 
 <div class="container p-3 my-5 bg-info text-white">
 <div >
@@ -36,6 +36,13 @@
 </div>
 </div>
 </form>
+
+<% if(request.getParameter("men")!=null){
+	String titulo= request.getParameter("titulo");
+	String mensaje= request.getParameter("men");
+	String icon=request.getParameter("icono");
+	out.print("<script>Swal.fire({title: '"+titulo+"', text:'"+mensaje+"', icon: '"+icon+"'});</script>");
+}%>
 
 </body>
 </html>
