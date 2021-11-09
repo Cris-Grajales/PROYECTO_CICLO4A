@@ -37,12 +37,12 @@
 </div>
 </form>
 
-<% if(request.getParameter("men")!=null){
-	String titulo= request.getParameter("titulo");
-	String mensaje= request.getParameter("men");
-	String icon=request.getParameter("icono");
-	out.print("<script>Swal.fire({title: '"+titulo+"', text:'"+mensaje+"', icon: '"+icon+"'});</script>");
-}%>
+<% 
+if(request.getParameter("men")!=null){
+	String mensaje=request.getParameter("men");
+	out.print("<script>alert('"+mensaje+"');</script>");
+	}
+%>
 
 </body>
 </html>

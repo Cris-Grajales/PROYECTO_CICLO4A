@@ -44,8 +44,8 @@
     </div>
 <%
 if(request.getParameter("mens")!=null){
-	String mensaje= request.getParameter("mens");
-	out.print( "<script> Swal.fire({title: '"+mensaje+"', icon: 'warning'});</script>");
+String mensaje=request.getParameter("mens");
+out.print("<script>alert('"+mensaje+"');</script>");
 }
 %>
     

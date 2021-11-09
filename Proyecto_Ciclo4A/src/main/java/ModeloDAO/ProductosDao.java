@@ -12,7 +12,7 @@ public boolean Cargar_Producto(String Ruta) {
 	  Runtime r = Runtime.getRuntime();
 	  Process p = null;
 	  
-	String command =  "mongoimport --db TiendaDB --collection db_productos --type csv --file " + Ruta+"--headerline";
+	String command =  "mongoimport -d TiendaDB -c db_productos --type csv --file " + Ruta+"--headerline";
 	  try {
 	   p = r.exec(command);
 	  

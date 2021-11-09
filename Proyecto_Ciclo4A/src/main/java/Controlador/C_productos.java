@@ -41,8 +41,9 @@ public class C_productos extends HttpServlet {
 			if(archivo.getSize()>0) {
 
 				
-			//String Url="C://Users//CASA//git//PROYECTO_CICLO4A//Proyecto_Ciclo4A//src//main//webapp//documentos//";
-			String Url="C://documentos//";
+			String Url="C://Users//CASA//git//PROYECTO_CICLO4A//Proyecto_Ciclo4A//src//main//webapp//documentos//";
+			//String Url="C:/documentos/";
+			//String Url="C:/Program Files/MongoDB/Server/5.0/bin/";
 			try {
 			InputStream file= archivo.getInputStream();
 			File copia = new File(Url+"prueba.csv");
@@ -57,10 +58,10 @@ public class C_productos extends HttpServlet {
 			JOptionPane.showMessageDialog(null, "Se Cargo el Archivo Correctamente.");
 			
 			if(proDao.Cargar_Producto(Url+"prueba.csv")) {
-				response.sendRedirect("Productos.jsp?men=Se Inserto Los Libros Correctamente");
+				response.sendRedirect("Productos.jsp?men=Se Inserto Los productos Correctamente");
 			}else
 			{
-				response.sendRedirect("Productos.jsp?men=No se Insertgo los Libros");
+				response.sendRedirect("Productos.jsp?men=No se Inserto los productos");
 			}
 			}catch(Exception ex) {
 				JOptionPane.showMessageDialog(null, "Error de Archivo....."+ex);
