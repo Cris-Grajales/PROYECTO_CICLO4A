@@ -62,8 +62,8 @@ public class C_productos extends HttpServlet {
 			{
 				response.sendRedirect("Productos.jsp?men=No se Insertgo los Libros");
 			}
-			}catch(Exception e) {
-				JOptionPane.showMessageDialog(null, "Error de Archivo....."+e);
+			}catch(Exception ex) {
+				JOptionPane.showMessageDialog(null, "Error de Archivo....."+ex);
 			}
 		   }
 			

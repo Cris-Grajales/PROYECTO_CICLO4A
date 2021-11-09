@@ -31,7 +31,7 @@
 </div>
 
 <div class="row justify-content-center  my-2">
-<button  class="btn btn-white" type="submit" name="cargar" >Cargar Productos</button>
+<button  class="btn btn-white" type="submit" name="cargar" >Cargar Productos </button>
 </div>
 </div>
 </div>
